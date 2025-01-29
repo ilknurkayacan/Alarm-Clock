@@ -1,0 +1,30 @@
+/* duty */
+
+.duty-list li{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    background-color: antiquewhite;
+}
+.duty-list li .item-name{
+    flex:1;
+    padding: 5px 10px;
+}
+/* sil iconu görünmeyecek */
+.duty-list li .delete-icon{
+    transform: scale(0);
+    transition: transform 200ms;
+}
+/* sil iconu üzerinde dolaşırken görünecek */
+.duty-list li:hover .delete-icon{
+    transform: scale(1);
+}
+
+/* dinmaik olarak item-completed özelliği eklendi */
+.duty-list li[item-completed] #divname{
+    text-decoration: line-through;
+    color: #999;
+}
+.dis{
+    display: none;
+}
